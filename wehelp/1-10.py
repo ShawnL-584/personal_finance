@@ -145,9 +145,40 @@ def toCSVString(nums):
 
 def sumOfArithmeticSequence(min, max, differ):
     # 你的程式碼
-    # sum_num = 0
-    # for n in range(min, max+1, differ):
-    #     sum_num += n
-    # return sum_num
-    #
     sum_num = 0
+    for n in range(min, max+1, differ):
+        sum_num += n
+    return sum_num
+
+#wehelp coding #9. 用預設值填滿空字串
+def fill(words, value):
+    return [word  if word else value for word in words]
+
+# result1 = fill(["Hello", "World", ""], "test")
+# result2 = fill(["", "ok", ""], "failed")
+# result3 = fill(["no empty"], "word")
+#
+# print(result1)
+# print(result2)
+# print(result3)
+
+
+#wehelp coding #10. 用前一個有效值填滿空字串
+def ffill(words):
+    list1 = []
+    value = ''
+    for word in words:
+        if word == '':
+            list1.append(value)
+        else:
+            value = word
+            list1.append(word)
+    return list1
+
+result1 = ["", "a", "", "", "c"]
+result2 = ["a", "b", "", "c", ""]
+result3 = ["", "", "a"]
+
+print(ffill(result1))
+print(ffill(result2))
+print(ffill(result3))
