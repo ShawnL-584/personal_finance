@@ -145,7 +145,9 @@ def toCSVString(nums):
 
 def sumOfArithmeticSequence(min, max, differ):
     # 你的程式碼
+    # sum_num = 0
+    # for n in range(min, max+1, differ):
+    #     sum_num += n
+    # return sum_num
+    #
     sum_num = 0
-    for n in range(min, max+1, differ):
-        sum_num += n
-    return sum_num
