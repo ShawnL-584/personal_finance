@@ -2,9 +2,9 @@ import dlib
 import cv2
 
 # 選擇第一隻攝影機
-# cap = cv2.VideoCapture(2, cv2.CAP_DSHOW)
+# cap = cv2.VideoCapture(3, cv2.CAP_DSHOW)
 # cap = cv2.VideoCapture(0)
-# cap = cv2.VideoCapture('test2.mp4')
+cap = cv2.VideoCapture('test2.mp4')
 
 # 調整預設影像大小，預設值很大，很吃效能
 # cap.set(cv2. CAP_PROP_FRAME_WIDTH, 1000)

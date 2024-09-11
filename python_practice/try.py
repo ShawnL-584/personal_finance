@@ -1,15 +1,16 @@
-a = {1, 6, 5}
-b = {3, 4, 7, 8}
-c = {3, 4}
-print(a.isdisjoint(b))
-print(b.issubset(c))
-print(b.issuperset(c))
-print(c.issubset(b))
-print(c.issuperset(b))
+from copy import deepcopy
+a = ([1, 2, 3], 5, 6, 7)
+b = [1, 2, 3]
+c = b.copy()
+d = deepcopy(a)
 
-# {1, 5}
-# {8, 7}
-# {3, 4}
-# {3, 4}
-# {1, 3, 4, 5, 7, 8}
-# {1, 3, 4, 5, 7, 8}
+c[0] = 10000
+d[0][0] = 999
+print(a)
+print(b)
+print(c)
+print(d)
+# ([1, 2, 3], 5, 6, 7)
+# [1, 2, 3]
+# [10000, 2, 3]
+# ([999, 2, 3], 5, 6, 7)
