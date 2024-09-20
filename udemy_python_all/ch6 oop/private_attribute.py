@@ -16,3 +16,6 @@ class Robot:
 robot1 = Robot('ZZZ')
 robot1.age_setter(-30)
 robot1.age_getter()
+
+# Your new age is not valid.
+# 25
