@@ -20,14 +20,21 @@
 
 ## 使用說明
 
-1. 執行 `db_setting.py`，確保專案資料夾中已生成 `datafile.db` 資料庫檔案。
-2. 執行 `index.py`，啟動伺服器，並確保伺服器正常運行。
-3. 打開瀏覽器，輸入 `http://127.0.0.1:5000`，即可開始使用個人理財網站。
+1. 刪除專案資料夾中的舊版 `datafile.db` 資料庫檔案，以確保沒有殘留的數據。
+2. 重新執行 `db_setting.py`，以生成新的 `datafile.db` 資料庫檔案。
+3. 執行 `index.py`，啟動伺服器並確保伺服器正常運行。
+4. 打開瀏覽器，輸入 `http://127.0.0.1:5000`，即可進入個人理財網站，開始管理您的資產。
 
 ---
 
 ## Usage Instructions
 
-1. Execute `db_setting.py` to create the database if `datafile.db` does not exist.
-2. Run `index.py` to start the server and ensure it is running correctly.
-3. Open your browser and navigate to `http://127.0.0.1:5000` to start using the personal finance web application.
+1. Delete any existing `datafile.db` in the project directory to ensure there are no old database records.
+2. Run `db_setting.py` to generate a fresh `datafile.db` database file.
+3. Execute `index.py` to start the server and ensure it is running properly.
+4. Open your browser and navigate to `http://127.0.0.1:5000` to access the personal finance web
+
+## 功能介紹
+
+*
+![image](https://github.com/ShawnL-584/personal_finance/blob/main/static/stock_show.png?raw=true)
