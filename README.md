@@ -16,7 +16,7 @@
 - **Python Flask 前後端互動**：基於Flask框架，實現前端表單提交和後端資料處理，並將結果呈現於網頁。
 - **Python Matplotlib 圖形視覺化**：動態繪製圓餅圖，展示不同資產的分佈情況。
 - **Web Scraping 爬蟲技術**：透過BeautifulSoup和Requests模組，實時抓取最新匯率、股票價格、黃金牌價等外部資料。
-- **Bootstrap**：使用Bootstrap進行頁面布局，並通過HTML和JavaScript實現前端互動與動態更新。
+- **Bootstrap**：使用Bootstrap進行頁面排版，並通過HTML和JavaScript實現前端互動與動態更新。
 
 ## 使用說明
 
