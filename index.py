@@ -128,8 +128,12 @@ def home():
     if us_dollars != 0 or taiwanese_dollars != 0 or total_stock_value != 0 or gold_value != 0:
         labels = ('美金', '台幣', '股票', '黃金')
         sizes = (us_dollars * currency['USDTWD']['Exrate'], taiwanese_dollars, total_stock_value, gold_value)
+
+        filtered_labels = [label for label, size in zip(labels, sizes) if size != 0]
+        filtered_sizes = [size for size in sizes if size != 0]
+
         fig, ax = plt.subplots(figsize=(6, 5))
-        ax.pie(sizes, labels=labels, autopct='%1.2f%%', shadow=None, textprops={'fontsize': 14})
+        ax.pie(filtered_sizes, labels=filtered_labels, autopct='%1.2f%%', shadow=None, textprops={'fontsize': 14})
         fig.subplots_adjust(top=1, bottom=0, right=1, left=0, hspace=0, wspace=0)
         plt.savefig('static/piechart2.jpg', dpi=200)
     else:
@@ -141,8 +145,12 @@ def home():
     if us_dollars != 0 or taiwanese_dollars != 0:
         labels = ('美金', '台幣')
         sizes = (us_dollars * currency['USDTWD']['Exrate'], taiwanese_dollars)
+
+        filtered_labels = [label for label, size in zip(labels, sizes) if size != 0]
+        filtered_sizes = [size for size in sizes if size != 0]
+
         fig, ax = plt.subplots(figsize=(6, 5))
-        ax.pie(sizes, labels=labels, autopct='%1.2f%%', shadow=None, textprops={'fontsize': 14})
+        ax.pie(filtered_sizes, labels=filtered_labels, autopct='%1.2f%%', shadow=None, textprops={'fontsize': 14})
         fig.subplots_adjust(top=1, bottom=0, right=1, left=0, hspace=0, wspace=0)
         plt.savefig('static/piechart3.jpg', dpi=200)
     else:
