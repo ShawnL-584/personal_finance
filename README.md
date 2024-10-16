@@ -1,9 +1,9 @@
 # 個人理財網站
 
-專案使用Flask 的網頁，設計用來追蹤和管理現金、股票和黃金資產。
+專案使用Flask的網頁，設計用來追蹤和管理現金、股票和黃金資產。
 使用者可以透過介面輸入和顯示不同資產的資訊，並生成圓餅圖來視覺化各類資產的比例。
 
-## 功能
+## 主要功能
 
 - **現金管理**：追蹤台幣和美金的金額，並根據美金匯率計算總額。
 - **股票管理**：可輸入股票代碼、數量、成本等，應用程式會自動抓取最新的股價，計算股票的總市值和報酬率。
@@ -27,14 +27,23 @@
 
 ---
 
-## Usage Instructions
+## Instructions
 
 1. Delete any existing `datafile.db` in the project directory to ensure there are no old database records.
 2. Run `db_setting.py` to generate a fresh `datafile.db` database file.
 3. Execute `index.py` to start the server and ensure it is running properly.
 4. Open your browser and navigate to `http://127.0.0.1:5000` to access the personal finance web
 
-## 功能介紹
+## 功能說明
 
-*
-![image](https://github.com/ShawnL-584/personal_finance/blob/main/static/stock_show.png?raw=true)
+* **首頁資產概況**  
+  首頁可以查看所有資產的比例狀況，包括現金、股票、黃金等資產的分佈。使用者也可以直接刪除每筆資產紀錄，進行管理操作。  
+  ![image](https://github.com/ShawnL-584/personal_finance/blob/main/static/index_show.png?raw=true)
+
+* **現金庫存管理**  
+  點擊現金庫存表單，可以提交新的現金資料，包括台幣與美金的數量，並記錄交易日期和備註。  
+  ![image](https://github.com/ShawnL-584/personal_finance/blob/main/static/cash_show.png?raw=true)
+
+* **股票庫存計算**  
+  系統會自動將相同股票代號但不同股數的股票進行合併計算，讓使用者在股票庫存中能夠更方便地了解每支股票的總持倉情況。  
+  ![image](https://github.com/ShawnL-584/personal_finance/blob/main/static/stock_show.png?raw=true)
